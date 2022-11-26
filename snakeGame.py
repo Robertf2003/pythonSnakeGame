@@ -15,7 +15,6 @@ wormBlock = pygame.Rect(initialX, initialY, widthOfWormSquare, widthOfWormSquare
 while True:
     screen.fill(blackRGB)
     pygame.draw.rect(screen, whiteRGB, block)
-
     pygame.display.flip()
 
 
