@@ -3,16 +3,19 @@ import pygame
 pygame.init()
 #size of window
 size = width, height = 600, 600
-#colors
-black = [0, 0, 0]
-white = [255, 255, 255]
 
+blackRGB = [0, 0, 0]
+whiteRGB = [255, 255, 255]
+
+initialX = 300
+initialY = 300
+widthOfWormSquare = 30
 screen = pygame.display.set_mode(size)
-
+wormBlock = pygame.Rect(initialX, initialY, widthOfWormSquare, widthOfWormSquare)
 while True:
-    screen.fill(black)
+    screen.fill(blackRGB)
+    pygame.draw.rect(screen, whiteRGB, block)
 
-    pygame.draw.rect(screen,white,pygame.Rect(10,30,60,60))
     pygame.display.flip()
 
 
